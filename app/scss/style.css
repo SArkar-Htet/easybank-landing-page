@@ -14,6 +14,16 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: 'Public Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #9698a6;
+}
+
+body a {
+  color: #9698a6;
+}
+
+body a, body a:link, body a:visited, body a:hover, body a:active {
+  text-decoration: none;
 }
 
 .flex {

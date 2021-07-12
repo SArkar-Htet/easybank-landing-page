@@ -15,6 +15,7 @@ body {
   line-height: 1.3;
   font-family: 'Public Sans', sans-serif;
   font-size: 0.875rem;
+  font-weight: 300;
   color: #9698a6;
 }
 
@@ -24,6 +25,20 @@ body a {
 
 body a, body a:link, body a:visited, body a:hover, body a:active {
   text-decoration: none;
+}
+
+body button, body .btn {
+  background: none;
+  border: 0;
+}
+
+body button_cta, body .btn_cta {
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  padding: 1rem 2.125rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
 }
 
 .flex {

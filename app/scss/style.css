@@ -83,7 +83,7 @@ body button_cta, body .btn_cta {
 }
 
 .header nav {
-  padding: 1.3125rem 1.5rem;
+  padding: 1.125rem 1.5rem;
 }
 
 .header__logo img {
@@ -91,7 +91,35 @@ body button_cta, body .btn_cta {
   height: 1.25rem;
 }
 
+.header__menu a {
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  position: relative;
+}
+
 .header__menu a:not(:last-child) {
   margin-right: 2rem;
+}
+
+.header__menu a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  background: green;
+  left: 0;
+  right: 0;
+  bottom: -2rem;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__menu a:hover {
+  color: #2d314d;
+}
+
+.header__menu a:hover::before {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

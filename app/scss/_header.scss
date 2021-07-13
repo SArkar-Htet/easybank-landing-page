@@ -1,7 +1,7 @@
 .header {
   font-size: $font-sm;
   nav {
-    padding: 1.3125rem 1.5rem;
+    padding: 1.125rem 1.5rem;
   }
 
   &__logo{
@@ -17,8 +17,32 @@
 
   &__menu{
     a {
+      transition: color 300ms ease-in-out;
+      position: relative;
+
       &:not(:last-child) {
         margin-right: 2rem;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        background: green;
+        left: 0;
+        right: 0;
+        bottom: -2rem;
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      &:hover {
+        color: $darkBlue;
+
+        &::before {
+          opacity: 1;
+        }
       }
     }
   }

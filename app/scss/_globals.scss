@@ -38,6 +38,18 @@ body {
     }
   }
 
+  .hide-for-desktop {
+    @include breakpoint-up(medium) {
+      display: none;
+    }
+  }
+
+  .hide-for-mobile {
+    @include breakpoint-down(small) {
+      display: none;
+    }
+  }
+
 }
 
 .flex {

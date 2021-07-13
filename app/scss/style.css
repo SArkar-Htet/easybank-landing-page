@@ -42,6 +42,18 @@ body button_cta, body .btn_cta {
   font-weight: 700;
 }
 
+@media (min-width: 40em) {
+  body .hide-for-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  body .hide-for-mobile {
+    display: none;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;

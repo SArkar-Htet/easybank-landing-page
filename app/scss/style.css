@@ -40,6 +40,12 @@ body button_cta, body .btn_cta {
   border-radius: 50px;
   color: white;
   font-weight: 700;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+body button_cta:hover, body .btn_cta:hover {
+  opacity: 0.6;
 }
 
 @media (min-width: 40em) {

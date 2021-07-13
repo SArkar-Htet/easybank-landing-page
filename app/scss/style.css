@@ -85,4 +85,8 @@ body button_cta, body .btn_cta {
 .header nav {
   padding: 1.3125rem 1.5rem;
 }
+
+.header__menu a:not(:last-child) {
+  margin-right: 2rem;
+}
 /*# sourceMappingURL=style.css.map */

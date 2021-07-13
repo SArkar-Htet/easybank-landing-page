@@ -1,5 +1,8 @@
 .header {
-  padding: 21px 24px;
+  font-size: $font-sm;
+  nav {
+    padding: 1.3125rem 1.5rem;
+  }
 
   &__logo{
     img {

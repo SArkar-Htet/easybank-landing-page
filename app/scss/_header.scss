@@ -12,7 +12,16 @@
   }
 
   &__hamburger{
-    // 
+    > span {
+      display: block;
+      background-color: #000;
+      width: 1.5rem;
+      height: 0.0625rem;
+
+      &:not(:last-child) {
+        margin-bottom: 0.25rem;
+      }
+    }
   }
 
   &__menu{

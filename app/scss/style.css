@@ -97,6 +97,17 @@ body button_cta:hover, body .btn_cta:hover {
   height: 1.25rem;
 }
 
+.header__hamburger > span {
+  display: block;
+  background-color: #000;
+  width: 1.5rem;
+  height: 0.0625rem;
+}
+
+.header__hamburger > span:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
 .header__menu a {
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;

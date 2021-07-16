@@ -1,3 +1,121 @@
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  20% {
+    opacity: 0.2;
+    visibility: visible;
+  }
+  40% {
+    opacity: 0.4;
+    visibility: visible;
+  }
+  60% {
+    opacity: 0.6;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  20% {
+    opacity: 0.2;
+    visibility: visible;
+  }
+  40% {
+    opacity: 0.4;
+    visibility: visible;
+  }
+  60% {
+    opacity: 0.6;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 300ms ease-in-out forwards;
+          animation: fade-in 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  40% {
+    opacity: 0.6;
+    visibility: visible;
+  }
+  60% {
+    opacity: 0.4;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.2;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  40% {
+    opacity: 0.6;
+    visibility: visible;
+  }
+  60% {
+    opacity: 0.4;
+    visibility: visible;
+  }
+  80% {
+    opacity: 0.2;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 300ms ease-in-out forwards;
+          animation: fade-out 300ms ease-in-out forwards;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -166,5 +284,7 @@ body button_cta:hover, body .btn_cta:hover {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background: linear-gradient(#2d314d, transparent);
+  visibility: hidden;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -24,12 +24,13 @@ body {
     text-decoration: none;
   }
 
-  button, .btn {
+  .btn {
     background: none;
     border: 0;
     cursor: pointer;
 
     &_cta {
+      @extend .btn;
       background: linear-gradient(to right, $limeGreen, $brightCyan);
       padding: 0.875rem 2.25rem;
       border-radius: 50px;

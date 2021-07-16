@@ -145,13 +145,13 @@ body a, body a:link, body a:visited, body a:hover, body a:active {
   text-decoration: none;
 }
 
-body button, body .btn {
+body .btn, body .btn_cta {
   background: none;
   border: 0;
   cursor: pointer;
 }
 
-body button_cta, body .btn_cta {
+body .btn_cta {
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   padding: 0.875rem 2.25rem;
@@ -162,7 +162,7 @@ body button_cta, body .btn_cta {
   transition: opacity 300ms ease-in-out;
 }
 
-body button_cta:hover, body .btn_cta:hover {
+body .btn_cta:hover {
   opacity: 0.6;
 }
 

@@ -17,7 +17,7 @@
       background-color: #000;
       width: 1.5rem;
       height: 0.0625rem;
-      transition: all 300ms ease-in-out;
+      @include easeInOut(all, 300ms);
       transform-origin: 5px 1px;
 
       &:not(:last-child) {
@@ -40,7 +40,7 @@
 
   &__menu{
     a {
-      transition: color 300ms ease-in-out;
+      @include easeInOut(color, 300ms)
       position: relative;
 
       &:not(:last-child) {
@@ -57,7 +57,7 @@
         right: 0;
         bottom: -2rem;
         opacity: 0;
-        transition: opacity 300ms ease-in-out;
+        @include easeInOut(opacity, 300ms)
       }
 
       &:hover {

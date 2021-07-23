@@ -41,7 +41,7 @@
     }
   }
 
-  &__menu {
+  &__toggle {
     a {
       @include easeInOut(color, 300ms);
       position: relative;

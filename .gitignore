@@ -1,2 +1,4 @@
 /images/
 style-guide.md
+*.css
+*.css.map

@@ -204,10 +204,15 @@ body .btn_cta:hover {
 
 .header {
   font-size: 0.875rem;
+  position: relative;
 }
 
 .header nav {
   padding: 1.125rem 1.5rem;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background: #fff;
 }
 
 .header__logo img {
@@ -278,7 +283,7 @@ body .btn_cta:hover {
 
 .header .overlay {
   position: fixed;
-  top: 3.75rem;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;

@@ -209,9 +209,7 @@ body .btn_cta:hover {
 
 .header nav {
   padding: 1.125rem 1.5rem;
-  position: fixed;
-  right: 0;
-  left: 0;
+  position: relative;
   background: #fff;
 }
 

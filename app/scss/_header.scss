@@ -3,9 +3,7 @@
   position: relative;
   nav {
     padding: 1.125rem 1.5rem;
-    position: fixed;
-    right: 0;
-    left: 0;
+    position: relative;
     background: #fff;
   }
 
@@ -43,7 +41,7 @@
     }
   }
 
-  &__menu{
+  &__menu {
     a {
       @include easeInOut(color, 300ms);
       position: relative;

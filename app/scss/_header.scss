@@ -83,4 +83,35 @@
     visibility: hidden;
     opacity: 0;
   }
+
+  &__menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.4375rem;
+    background-color: $white;
+    width: calc(100% - 3rem);
+    padding: 1.625rem 0px;
+    border-radius: 0.3125rem;
+    text-align: center;
+    a {
+      display: block;
+      padding: 0.5625rem 0px;
+      font-size: $font-md;
+      
+      &:link {
+        color: $darkBlue;
+        @include easeInOut(color, 300ms);
+      }
+      &:hover {
+        color: $grayishBlue;
+      }
+      &:visited {
+        color: $darkBlue;
+      }
+      &:active {
+        color: $grayishBlue;
+      }
+    }
+  }
 }

@@ -1,18 +1,17 @@
 const btnHamburger = document.querySelector('#btnHamburger');
-const overlay = document.querySelector('.overlay');
-const menu = document.querySelector('.header__menu');
+const fadeElems = document.querySelectorAll('.has_fade');
 btnHamburger.addEventListener('click', function() {
-  if (!btnHamburger.classList.contains('open')) { 
+  if (!btnHamburger.classList.contains('open')) { //Open Hamburger Menu
     btnHamburger.classList.add('open');
-    overlay.classList.remove('fade-out');
-    overlay.classList.add('fade-in');
-    menu.classList.remove('fade-out');
-    menu.classList.add('fade-in');
-  } else {
+    fadeElems.forEach(function (element) {
+      element.classList.remove('fade-out');
+      element.classList.add('fade-in');
+    });
+  } else { //Close Hamburger Menu
     btnHamburger.classList.remove('open');
-    overlay.classList.remove('fade-in');
-    overlay.classList.add('fade-out');
-    menu.classList.remove('fade-in');
-    menu.classList.add('fade-out');
+    fadeElems.forEach(function (element) {
+      element.classList.remove('fade-in');
+      element.classList.add('fade-out');
+    });
   }
 });

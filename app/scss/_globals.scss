@@ -16,6 +16,10 @@ body {
   font-weight: $light;
   color: $grayishBlue;
 
+  &.no_scroll {
+    overflow: hidden;
+  }
+
   a {
     color: $grayishBlue;
   }

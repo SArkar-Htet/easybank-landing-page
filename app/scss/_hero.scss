@@ -1,8 +1,9 @@
 .hero {
+  background-color: $veryLightGray;
   &__image {
     position: relative;
     background-image: url('/images/bg-intro-mobile.svg');
-    height: 17.8125rem;
+    min-height: 17.8125rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

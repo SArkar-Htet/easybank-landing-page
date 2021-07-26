@@ -18,4 +18,12 @@
       background-position: center bottom;
     }
   }
+
+  &__text {
+    p {
+      font-size: $font-sm;
+      line-height: 1.5;
+      margin-bottom: 2.25rem;
+    }
+  }
 }

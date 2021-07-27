@@ -6,6 +6,7 @@
     padding-bottom: 1.125rem;
     position: relative;
     background: #fff;
+    z-index: 3;
   }
 
   &__logo {
@@ -81,6 +82,7 @@
     bottom: 0;
     left: 0;
     background: linear-gradient($darkBlue, transparent);
+    z-index: 1;
   }
 
   &__menu {
@@ -93,6 +95,7 @@
     padding: 1.625rem 0px;
     border-radius: 0.3125rem;
     text-align: center;
+    z-index: 2;
     a {
       display: block;
       padding: 0.5625rem 0px;

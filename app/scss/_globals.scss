@@ -27,6 +27,21 @@ body {
     font-weight: $light;
   }
 
+  h1 {
+    font-size: 2rem;
+    @include breakpoint-up(large) {
+      font-size: 2.5625rem;
+    }
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 2.25rem;
+    @include breakpoint-up(large) {
+      font-size: $font-md;
+    }
+  }
+
   a {
     color: $grayishBlue;
   }

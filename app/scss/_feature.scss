@@ -1,5 +1,10 @@
 .feature {
   background-color: $lightGrayishBlue;
+  
+  @include breakpoint-down(small) {
+    text-align: center;
+  }
+
   &__intro {
     margin-bottom: 4.6875rem;
     @include breakpoint-up(large) {
@@ -16,13 +21,13 @@
     flex: 100%;
     @include breakpoint-up(medium) {
       flex: 50%;
+      &:not(:last-child) {
+        padding-right: 1.875rem;
+      }
     }
 
     @include breakpoint-up(large) {
       flex: 25%;
-      &:not(:last-child) {
-        padding-right: 1.875rem;
-      }
     }
   }
 }

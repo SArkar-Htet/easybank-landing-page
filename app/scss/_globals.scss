@@ -22,16 +22,27 @@ body {
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin: 0 auto;
     color: $darkBlue;
     font-weight: $light;
   }
 
   h1 {
-    font-size: 2rem;
+    margin: 0 auto;
+    font-size: 2.375rem;
     @include breakpoint-up(large) {
-      font-size: 2.5625rem;
+      font-size: 3.25rem;
     }
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    @include breakpoint-up(large) {
+      font-size: 2.375rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   p {

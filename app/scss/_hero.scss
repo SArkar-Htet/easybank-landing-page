@@ -1,5 +1,10 @@
 .hero {
   background-color: $veryLightGray;
+
+  @include breakpoint-down(small) {
+    padding-bottom: 49px;
+  }
+  
   .container {
     @include breakpoint-up(large) {
       display: flex;
@@ -67,7 +72,6 @@
 
   &__text {
     text-align: center;
-
     @include breakpoint-up(large) {
       flex: 2;
       order: 1;

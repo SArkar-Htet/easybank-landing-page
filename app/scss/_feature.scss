@@ -1,14 +1,15 @@
 .feature {
   background-color: $lightGrayishBlue;
-  
+
   @include breakpoint-down(small) {
     text-align: center;
   }
 
   &__intro {
-    margin-bottom: 4.6875rem;
+    margin-bottom: 3.4375rem;
     @include breakpoint-up(large) {
       width: 55%;
+      margin-bottom: 4.6875rem;
     }
   }
 

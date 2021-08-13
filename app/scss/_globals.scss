@@ -67,17 +67,17 @@ body {
   .container {
     max-width: 70rem;
     margin: 0 auto;
-    &_fluid {
+    &--fluid {
       padding-top: 2.25rem;
       padding-right: 1.5rem;
       padding-bottom: 2.25rem;
       padding-left: 1.5rem;
     }
-    &_py{
+    &--py{
       padding-top: 2.25rem;
       padding-bottom: 2.25rem;
     }
-    &_px {
+    &--px {
       padding-right: 1.5rem;
       padding-left: 1.5rem;
     }

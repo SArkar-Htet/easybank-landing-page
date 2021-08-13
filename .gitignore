@@ -1,4 +1,5 @@
 # /images/
 style-guide.md
-# *.css
-*.css.map
+*.css
+# *.css.map
+.vscode/

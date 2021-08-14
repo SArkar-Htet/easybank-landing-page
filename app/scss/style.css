@@ -577,6 +577,12 @@ body .text-align-center {
   background-color: #fafafa;
 }
 
+@media (max-width: 39.9375em) {
+  .article__header {
+    text-align: center;
+  }
+}
+
 .article__grid {
   display: -ms-grid;
   display: grid;
@@ -610,7 +616,19 @@ body .text-align-center {
 
 .article__grid .card img {
   width: 100%;
-  height: 11.5rem;
+  height: 14.625rem;
+}
+
+@media (min-width: 40em) {
+  .article__grid .card img {
+    height: 15.625rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .article__grid .card img {
+    height: 11.5rem;
+  }
 }
 
 .article__grid .card__body {

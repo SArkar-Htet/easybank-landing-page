@@ -347,7 +347,8 @@ body .text-align-center {
   display: block;
   position: absolute;
   height: 5px;
-  background: green;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
   left: 0;
   right: 0;
   bottom: -2rem;

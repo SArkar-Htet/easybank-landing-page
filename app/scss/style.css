@@ -298,11 +298,6 @@ body .text-align-center {
   z-index: 3;
 }
 
-.header__logo img {
-  width: 8.8125rem;
-  height: 1.25rem;
-}
-
 .header__hamburger > span {
   display: block;
   background-color: #000;
@@ -649,6 +644,8 @@ body .text-align-center {
 .article__grid .card__title {
   font-size: 1rem;
   margin: 0.875rem auto;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
 }
 
 .article__grid .card__text {
@@ -661,6 +658,63 @@ body .text-align-center {
 }
 
 .article__grid .card:hover .card__title {
-  color: #2bb7da;
+  color: #31d35c;
+}
+
+.footer {
+  background-color: #2d314d;
+  text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 1.875rem;
+}
+
+.footer__social {
+  margin-bottom: 1.875rem;
+}
+
+.footer__social a:not(:last-child) {
+  padding-right: 15px;
+}
+
+.footer__social a svg path {
+  -webkit-transition: fill 300ms ease-in-out;
+  transition: fill 300ms ease-in-out;
+}
+
+.footer__social a:hover svg path {
+  fill: #31d35c;
+}
+
+.footer__links a {
+  display: block;
+  padding: 10px 0px;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.footer__links a:link {
+  color: white;
+}
+
+.footer__links a:visited {
+  color: white;
+}
+
+.footer__links a:hover {
+  color: #31d35c;
+}
+
+.footer__links a:active {
+  color: #31d35c;
+}
+
+.footer__button {
+  margin: 1.875rem auto;
+}
+
+.footer__copyright {
+  color: #9698a6;
 }
 /*# sourceMappingURL=style.css.map */

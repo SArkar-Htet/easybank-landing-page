@@ -1,0 +1,57 @@
+.footer {
+  background-color: $darkBlue;
+  text-align: center;
+
+  &__logo {
+    margin-bottom: 1.875rem;
+  }
+
+  &__social {
+    margin-bottom: 1.875rem;
+
+    a {
+      &:not(:last-child) {
+        padding-right: 15px;
+      }
+
+      svg path {
+        @include easeInOut(fill, 300ms);
+      }
+
+      &:hover svg path {
+        fill: $limeGreen;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      display: block;
+      padding: 10px 0px;
+      @include easeInOut(color, 300ms);
+      &:link {
+        color: $white;
+      }
+
+      &:visited {
+        color: $white;
+      }
+      
+      &:hover {
+        color: $limeGreen;
+      }
+
+      &:active {
+        color: $limeGreen;
+      }
+    }
+  }
+
+  &__button {
+    margin: 1.875rem auto;
+  }
+
+  &__copyright {
+    color: $grayishBlue;
+  }
+}

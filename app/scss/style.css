@@ -719,7 +719,7 @@ body .text-align-center {
 }
 
 .footer__social a:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 0.9375rem;
 }
 
 .footer__social a svg path {
@@ -745,7 +745,7 @@ body .text-align-center {
 
 .footer__links a {
   display: block;
-  padding: 10px 0px;
+  padding: 0.625rem 0;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }

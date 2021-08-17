@@ -231,18 +231,31 @@ body .btn, body .btn_cta {
 }
 
 body .btn_cta {
+  position: relative;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   padding: 0.875rem 2.25rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   color: white;
   font-weight: 700;
+}
+
+body .btn_cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
 
-body .btn_cta:hover {
-  opacity: 0.6;
+body .btn_cta:hover::before {
+  opacity: 1;
 }
 
 body .text-align-center {

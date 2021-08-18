@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/SArkar-Htet/easybank-landing-page
 - Live Site URL: https://easybank-landing-page-mu-sandy.vercel.app/
 
 ## My process
@@ -46,7 +46,7 @@ Users should be able to:
 - [Build a website from scratch - Frontend Mentor EasyBank landing page](https://www.youtube.com/playlist?list=PLUWqFDiirlsuYscECzks6zIZWr_Cfcx9k) - This is an amazing playlist which helped me to understand responsive, frontend, mobile-first workflow and some CSS properties.
 - [Version Control with Git](https://www.udacity.com/course/version-control-with-git--ud123) - This 
 course helped me to know basic knowledge of git and how to write a good commit message.
-- [W3 Schools](https://www.w3schools.com/) This is an amazing website for who is learning about web development.
+- [W3 Schools](https://www.w3schools.com/) This is an amazing website for who are learning about web development.
 
 ## Author
 

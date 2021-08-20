@@ -9,11 +9,11 @@
     z-index: 3;
   }
 
-  &__logo {
-    // 
-  }
-
   &__hamburger {
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
     > span {
       display: block;
       background-color: #000;
@@ -41,35 +41,47 @@
   }
 
   &__toggle {
-    a {
-      @include easeInOut(color, 300ms);
-      position: relative;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
 
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
+      li {
+        display: inline-block;
 
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 5px;
-        background-image: linear-gradient(to right, $limeGreen, $brightCyan);
-        left: 0;
-        right: 0;
-        bottom: -2rem;
-        opacity: 0;
-        @include easeInOut(opacity, 300ms)
-      }
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
 
-      &:hover {
-        color: $darkBlue;
+        a {
+          position: relative;
 
-        &::before {
-          opacity: 1;
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 5px;
+            background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+            left: 0;
+            right: 0;
+            bottom: -2rem;
+            opacity: 0;
+            @include easeInOut(opacity, 300ms)
+          }
+          @include easeInOut(color, 300ms);
+          
+          &:hover {
+            color: $darkBlue;
+    
+            &::before {
+              opacity: 1;
+            }
+          }
+
         }
       }
     }
+    
   }
 
   .overlay {
@@ -93,24 +105,31 @@
     border-radius: 0.3125rem;
     text-align: center;
     z-index: 2;
-    a {
-      display: block;
-      padding: 0.5625rem 0px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
       font-size: $font-md;
-      
-      &:link {
-        color: $darkBlue;
-        @include easeInOut(color, 300ms);
-      }
-      &:hover {
-        color: $grayishBlue;
-      }
-      &:visited {
-        color: $darkBlue;
-      }
-      &:active {
-        color: $grayishBlue;
+      li {
+        padding: 0.5625rem 0px;
+        a {
+          &:link {
+            color: $darkBlue;
+            @include easeInOut(color, 300ms);
+          }
+          &:visited {
+            color: $darkBlue;
+          }
+          &:hover {
+            color: $grayishBlue;
+          }
+          &:active {
+            color: $grayishBlue;
+          }
+        }
       }
     }
+    
   }
 }

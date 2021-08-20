@@ -30,19 +30,29 @@
       margin-bottom: 0;
       align-self: flex-end;
     }
-    a {
-      &:not(:last-child) {
-        margin-right: 0.9375rem;
-      }
 
-      svg path {
-        @include easeInOut(fill, 300ms);
-      }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
 
-      &:hover svg path {
-        fill: $limeGreen;
+      li {
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: 0.9375rem;
+        }
+        a { 
+          svg path {
+            @include easeInOut(fill, 300ms);
+          }
+    
+          &:hover svg path {
+            fill: $limeGreen;
+          }
+        }
       }
     }
+    
   }
 
   &__links {
@@ -57,26 +67,34 @@
         grid-area: col-2;
       }
     }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
 
-    a {
-      display: block;
-      padding: 0.625rem 0;
-      @include easeInOut(color, 300ms);
+      li {
+        padding: 0.625rem 0;
 
-      &:link {
-        color: $white;
-      }
-
-      &:visited {
-        color: $white;
-      }
-      
-      &:hover {
-        color: $limeGreen;
-      }
-
-      &:active {
-        color: $limeGreen;
+        a {
+          @include easeInOut(color, 300ms);
+    
+          &:link {
+            color: $white;
+          }
+    
+          &:visited {
+            color: $white;
+          }
+          
+          &:hover {
+            color: $limeGreen;
+          }
+    
+          &:active {
+            color: $limeGreen;
+          }
+        }
+        
       }
     }
     
@@ -100,9 +118,4 @@
     }
   }
 
-  // .attribution {
-  //   @include breakpoint-up(large) {
-  //     grid-area: attr;
-  //   }
-  // }
 }

@@ -313,9 +313,15 @@ body .text-align-center {
 
 .header__hamburger {
   background: none;
-  border: 0;
   padding: 0;
   cursor: pointer;
+}
+
+.header__hamburger, .header__hamburger:focus, .header__hamburger:active {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .header__hamburger > span {
